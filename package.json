@@ -7,12 +7,11 @@
     "node": "18.x || 20.x"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "chmod +x node_modules/.bin/vite && vite build",
-    "preview": "vite preview",
-    "vercel-build": "npm ci && npm run build",
-
-  },
+  "dev": "vite",
+  "build": "chmod +x node_modules/.bin/vite && vite build",
+  "preview": "vite preview",
+  "vercel-build": "npm ci && npm run build"
+},
   "dependencies": {
     "@supabase/supabase-js": "^2.35.0",
     "@types/react": "^19.2.14",
