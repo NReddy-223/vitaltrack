@@ -32,8 +32,12 @@ app = FastAPI(title="VitalTrack API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],          # restrict to your Vercel URL in production
-    allow_credentials=True,
+    allow_origins=[
+        "http://localhost:5173",
+        "https://vitaltrack-seag.vercel.app",
+        "*"
+    ],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
